@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的跨年网页</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .countdown {
+            font-size: 2em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .wish {
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>迎接新的一年!</h1>
+        <div class="countdown" id="countdown">加载中...</div>
+        <p class="wish">愿你在新的一年里心想事成，幸福安康！</p>
+    </div>
+
+    <!-- 播放音乐按钮 -->
+    <button onclick="playMusic()">🎵 播放新年音乐</button>
+
+    <script>
+        function updateCountdown() {
+            const now = new Date();
+            const nextYear = now.getFullYear() + 1;  // ✅ 始终指向下一年
+            const target = new Date(`January 1, ${nextYear} 00:00:00`);
+
+            const diff = target - now;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = `${days} 天 ${hours} 小时 ${minutes} 分钟 ${seconds} 秒`;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // 初始化显示
+    </script>
+
+    <script>
+        function playMusic() {
+            const audio = new Audio('bymyside.mp3');
+            audio.play();
+        }
+    </script>
+</body>
+
+</html>

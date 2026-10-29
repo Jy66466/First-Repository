@@ -1,0 +1,4 @@
+﻿model,mape,rmse,status,is_selected,note
+Holt 线性趋势,35.3144,363835.0696,可用,False,
+Holt 阻尼趋势,28.7872,296676.6038,可用,True,
+Holt-Winters 加法季节(12),,,不可用,False,样本不足两个完整季节周期（需 24 个月），季节项无法估计

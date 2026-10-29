@@ -1,0 +1,8 @@
+﻿table,rows_raw,rows_clean,rows_dropped,avg_missing_pct_before,avg_missing_pct_after,note
+payments_order,103886,99440,4446,0.0,0.0,按 order_id 聚合支付金额/方式数/分期均值
+items_clean,112650,112650,0,0.0,0.0,保留订单项粒度 + 商品/品类左连 + IQR/P99 异常标记
+reviews_order,99224,98128,1096,21.01,20.99,review_id 去重 + 按订单取最新一条
+geo_prefix,1000163,19015,981148,0.0,0.0,按邮编前缀取经纬度中位数
+customers_clean,99441,96096,3345,0.0,0.0,按 customer_unique_id 聚合，地理取首单地址
+orders_clean(全量),99441,99441,0,0.62,0.38,左连支付/明细/客户/评价，无匹配项标记
+orders_clean(主分析集),99441,97308,2133,,,delivered+shipped 且 2017-01~2018-08

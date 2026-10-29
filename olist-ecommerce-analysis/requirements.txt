@@ -1,0 +1,29 @@
+# Olist 电商数据分析 —— 依赖清单
+# 说明：本文件故意不锁版本号（首次安装后再用 pip freeze 生成锁定版 requirements.lock.txt）
+# 安装：pip install -r requirements.txt
+# 注意：本项目禁用 faker（不使用任何合成数据），故不列入
+
+# ---- 数据处理 ----
+pandas
+numpy
+scipy
+
+# ---- 静态图（模板复现 fig01–fig11、业务图 fig12–fig20）----
+matplotlib
+seaborn
+
+# ---- 交互图与静态导出 ----
+plotly
+kaleido
+
+# ---- 交互大屏（6 组件联动）----
+streamlit
+
+# ---- 预测模型（Holt-Winters，第 5 个模型）----
+statsmodels
+
+# ---- Excel 读写（仅查看核对，不出图）----
+openpyxl
+
+# ---- 仅用于下载数据集（Kaggle 官方 CLI），不参与分析 ----
+kaggle

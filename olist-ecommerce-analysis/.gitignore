@@ -1,0 +1,29 @@
+# ---- Python / venv ----
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# ---- IDE / OS ----
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# ---- Raw data: not committed, re-downloadable, about 126 MB ----
+data/raw/*.csv
+data/raw/*.zip
+
+# ---- Logs ----
+logs/*.txt
+logs/*.log
+
+# ---- Secrets ----
+kaggle.json
+.env
+
+# ---- 临时备份与一次性脚手架（不入库）----
+*.bak
+*.bak[0-9]*
+init_repo.bat

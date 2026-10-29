@@ -1,0 +1,12 @@
+﻿category,gmv,gmv_ex,rank_full,rank_ex,d_rank,in_top10_full,in_top10_ex
+health_beauty,1242522.58,667702.66,1,3,-2,True,True
+watches_gifts,1186334.0,577459.07,2,6,-4,True,True
+bed_bath_table,1033689.12,940731.04,3,1,2,True,True
+sports_leisure,964416.72,706590.79,4,2,2,True,True
+computers_accessories,895951.49,666941.71,5,4,1,True,True
+furniture_decor,713299.73,610484.87,6,5,1,True,True
+housewares,622504.92,472858.5,7,7,0,True,True
+cool_stuff,617262.05,401746.91000000003,8,8,0,True,True
+auto,582743.52,334734.95,9,9,0,True,True
+garden_tools,474170.4,297211.33,10,11,-1,True,False
+toys,469839.51,315832.59,11,10,1,False,True
