@@ -14,7 +14,7 @@
 
 | # | 结论 | 关键证据 |
 |---|---|---|
-| 1 | 平台属**拉新驱动、留存失效** | 复购率仅 **3.03%**；**94.37%** 的 GMV 来自一次性客户；次月留存自 100% 断崖跌至 **0.49%** |
+| 1 | 平台属**拉新驱动、留存失效** | 复购率仅 **3.03%**；**94.38%** 的 GMV 来自一次性客户；次月留存自 100% 断崖跌至 **0.49%** |
 | 2 | 销售结构**高度集中** | 17 个 A 类品类（23.61%）贡献 **79.71%** 销售额；A 类前 8 个品类即占 50% |
 | 3 | 增长动能**已现走弱迹象** | 金牛 18 个品类占 **52.72%** GMV 但跑输大盘（+140.63%）；Holt 阻尼趋势 MAPE **28.79%**，误差源于 2018 下半年趋势转弱 |
 
@@ -56,6 +56,8 @@ kaggle datasets download -d olistbr/brazilian-ecommerce -p data/raw --unzip
 
 需先在 <https://www.kaggle.com/settings> 生成 API Token，放到 `%USERPROFILE%\.kaggle\kaggle.json`。
 解压后 9 个 CSV **平铺**放在 `data/raw/`，不改名、不移动、不修改原文件。
+
+> data/raw/ **不入库**（已在 .gitignore 中排除）；克隆仓库后按上面的 Kaggle CLI 命令下载即可，data/clean/ 与结果表已随仓库提供。
 
 ### 3. 一键运行
 
@@ -148,3 +150,14 @@ streamlit run scripts/08_dashboard.py
 | 2 | 缺少外生变量 | 无营销活动、流量来源、竞品数据，留存下降无法归因到具体运营动作 |
 | 3 | 同期群口径 | 以窗口内首单定义，2016 年首购客户被推后计入，早期群体规模略高估 |
 | 4 | 地理精度 | 州级质心由客户经纬度均值计算，未引入外部边界数据（规避来源不明的 geojson） |
+
+
+---
+
+## 九、交付物与仓库位置
+
+- 最终论文 PDF：docs/Olist 电商客户分群与销售结构可视化分析(定稿版).pdf
+- 最终 Word：单独提交，不放入本仓库（按课程要求提交 PDF 或 Word）
+- GitHub 项目子目录：<https://github.com/Jy66466/First-Repository/tree/main/olist-ecommerce-analysis>
+- 分支：main
+- 仓库说明：First-Repository 为个人项目合集，Olist 项目位于 olist-ecommerce-analysis/ 子目录；另外两个项目保留在仓库根目录，互不影响。
