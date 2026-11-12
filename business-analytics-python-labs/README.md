@@ -21,6 +21,8 @@
 | BA-CH02-18 | ETL：清洗、拆分、纵向/横向合并 | Power Query / Excel | 10 项工作簿操作结果对照一致 |
 | BA-CH08-01 | SQL 基础、导入与开窗函数 | MySQL/SQL | SQLite 等价实现 23 项核验一致；不安装 MySQL |
 | BA-CH10-01 | 效应分解：AirPassengers 与节日效应 | WPS/Excel + Power BI | 144 期对数变换逐值一致；分解重构误差 < 1e-13；WPS AI 预测为黑盒边界 |
+| BA-CH02-12 | 桑基图：流向数据计算 | Excel/Power BI | 模型缓存与源工作簿 15 条边逐边一致（PBIX 实测）；节点流/层级计算经核验 |
+| BA-CH02-17 | 销售看板：分省销售分析 | Excel/Power BI | 星型模型/计算列/聚合与 PBIX EVALUATE 逐数值一致（PBIX 实测） |
 
 完整索引见 [EXPERIMENT_INDEX.md](EXPERIMENT_INDEX.md)。候选范围和原始材料证据以本地阶段清单为准；候选不等于已迁移。
 
@@ -36,7 +38,7 @@ python -m pip install -r environments/requirements-core.txt -r environments/requ
 
 ## 测试
 
-从项目根目录指定全部实验测试目录运行。P1.2 统一验收结果为 `117 passed`，其中 P1.1 前 40 项、P1.1 新增 24 项、P1.2 新增 53 项。
+从项目根目录指定全部实验测试目录运行。P1.3 统一验收结果为 `134 passed`，其中 P1.1 前 40 项、P1.1 新增 24 项、P1.2 新增 53 项、P1.3 新增 17 项。
 
 ## 公开与许可边界
 

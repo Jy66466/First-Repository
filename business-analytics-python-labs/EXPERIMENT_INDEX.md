@@ -19,5 +19,7 @@
 | BA-CH02-18 | 第 2 章 | ETL：清洗、拆分、纵向/横向合并 | `chapters/ch02-analysis-methods/BA-CH02-18-etl-clean-merge/` | 完成；拆分、清洗、追加与连接共 10 项工作簿对照一致 |
 | BA-CH08-01 | 第 8 章 | SQL 基础、导入与开窗函数 | `chapters/ch08-sql-fundamentals/BA-CH08-01-sql-fundamentals/` | 完成（SQLite 等价子集）；教学 CSV 本地核对一致；未安装 MySQL |
 | BA-CH10-01 | 第 10 章 | 效应分解：AirPassengers 与节日效应 | `chapters/ch10-forecasting/BA-CH10-01-effect-decomposition/` | 完成（可验证部分）；144 期 ln_AIR 逐值一致，分解重构一致；WPS AI 预测与 Power BI 未复现 |
+| BA-CH02-12 | 第 2 章 | 桑基图：流向数据计算 | `chapters/ch02-analysis-methods/BA-CH02-12-sankey-flow/` | 完成（流数据核心）；PBIX 实测缓存与源工作簿 15 条边逐边一致；第三方视觉渲染不复现 |
+| BA-CH02-17 | 第 2 章 | 销售看板：分省销售分析 | `chapters/ch02-analysis-methods/BA-CH02-17-sales-dashboard/` | 完成（核心逻辑）；星型模型/计算列/聚合与 PBIX EVALUATE 逐数值一致；17a 快速看板不迁移 |
 
 未迁移条目没有标记为完成。依赖随机公式、缺少明确结果、跨 Power BI/ETL 范围或存在高优先级隐私风险的实验继续保留在阶段报告中。

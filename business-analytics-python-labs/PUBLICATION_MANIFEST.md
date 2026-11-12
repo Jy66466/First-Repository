@@ -39,3 +39,16 @@
 P1.2 特别边界：SQL 实验仅发布合成演示数据与原创 SQL；教材 kdd99 CSV 只允许本地只读核对，不进入发布候选。维度模型与效应分解实验的 PBIX 相关结论不写入公开文档（仅说明“未验证，留待后续阶段”）。跳过项 BA-CH02-12、BA-CH02-21、BA-CH09-01 不产生发布候选。
 
 本文件只定义发布候选，不授权 Git add、commit 或 push。
+
+## P1.3 新增发布候选
+
+新增 2 个实验目录（Power BI 迁移，经 Power BI Desktop 实测验证）：
+
+- `chapters/ch02-analysis-methods/BA-CH02-12-sankey-flow/`
+- `chapters/ch02-analysis-methods/BA-CH02-17-sales-dashboard/`
+
+候选白名单与 P1.1/P1.2 相同：`.gitignore`、README、INPUTS、`pyproject.toml`、运行入口、`src/` 源码、`tests/` 合成测试。
+
+P1.3 特别边界：桑基实验只发布流数据计算，不发布第三方视觉对象或其许可材料；销售看板实验的教材 CSV（Northwind 中文演示数据，含员工字段）仅本地只读核对，不进入发布候选，公开测试全部使用合成数据。PBIX 审计副本、EVALUATE 证据、截图与内部报告留在 `phase-1.3-review/`，不同步到公开仓库。
+
+本文件只定义发布候选，不授权 Git add、commit 或 push。
