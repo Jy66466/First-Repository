@@ -1,0 +1,35 @@
+# Local data and generated outputs
+data/
+inputs/
+**/data/
+**/inputs/
+**/outputs/*
+!**/outputs/.gitkeep
+
+# Python environments, caches, and bytecode
+.venv/
+venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.ipynb_checkpoints/
+*.py[cod]
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Restricted source and binary analysis assets
+*.csv
+*.xls
+*.xlsx
+*.json
+*.pbix
+*.pbit
+*.pbiviz
+*.pdf
+*.ppt
+*.pptx
+*.doc
+*.docx
+*.mp4
